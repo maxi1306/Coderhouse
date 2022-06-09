@@ -502,7 +502,7 @@
 
 
 
-/* Responsive */
+/* ================= Responsive =============  */
 
 /* Tablets */
 
@@ -582,6 +582,68 @@
 }
 
 
+/* MOBILE L */
+
+@media (max-width:425px) {
+
+    .nav ul {
+        justify-content: center
+    }
+
+    /* INDEX */
+
+    .inicioBody {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .ns {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+
+    }
+
+    .ns img {
+        max-width: 410px;
+    }
+
+    .fondoServ {
+        max-width: 410px;
+
+    }
+
+    .ns h1 {
+        text-align: center;
+    }
+
+    /* DEPI DEFINITIVA */
+
+    .depiTexto h1 {
+        text-align: center;
+    }
+
+    .imgDepi img {
+        width: 400px;
+    }
+
+    .depiTexto p {
+        text-align: center;
+    }
+
+    .botDepi {
+        margin-top: 40px;
+    }
+
+    /* CONTACTO */
+
+    .header iframe {
+        max-width: 390px;
+    }
+}
+
 /* MOBILE */
 
 
@@ -592,7 +654,7 @@
     }
 
     /* INDEX */
-    
+
     .indexText {
         font-size: 20px;
     }
@@ -702,5 +764,44 @@
     }
 
 
+
+}
+
+
+/* MOBILE S*/
+
+@media (max-width:320px) {
+
+
+    /* INDEX */
+
+    .inicioBody {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .fondoServ {
+        max-width: 300px;
+
+    }
+
+    .ns img {
+        max-width: 300px;
+    }
+
+    /* DEPI DEFINITIVA */
+
+    .botDepi a {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    /* CONTACTO */
+
+    .header iframe {
+        max-width: 290px;
+    }
 
 }
