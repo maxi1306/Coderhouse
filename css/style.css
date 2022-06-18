@@ -86,14 +86,14 @@
 .inicioBody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "headerIndex headerIndex headerIndex headerIndex headerIndex"
-        "headerIndex headerIndex headerIndex headerIndex headerIndex"
-        "mainIndex mainIndex mainIndex mainIndex mainIndex"
-        "mainIndex mainIndex mainIndex mainIndex mainIndex"
+        "headerIndex headerIndex headerIndex headerIndex "
+        "headerIndex headerIndex headerIndex headerIndex "
+        "mainIndex mainIndex mainIndex mainIndex "
+        "mainIndex mainIndex mainIndex mainIndex "
 
 }
 
@@ -107,10 +107,22 @@
 
 .inicioBody {
     background-image: url(../img/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg);
+    background-size: cover;
 }
 
+.imgLocal{
+    width: 80%;
+    
+}
 .headerIndex {
     padding-top: 30px;
+    text-align: center;
+}
+
+.headerIndex img{
+    margin: 20px;
+    border-radius: 15px;
+    
 }
 
 .mainIndex {
@@ -145,6 +157,9 @@
     padding-bottom: 15px;
 }
 
+.imgLocal{
+
+}
 /* -=-=-=-=-MAIN NUESTROS SERVICIOS-=-=-=-=-=-=- */
 
 .ns {
@@ -504,6 +519,107 @@
 
 /* ================= Responsive =============  */
 
+
+/* Laptop L */
+@media (max-width: 1440px) {
+    /* INDEX */
+
+    .inicioBody {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            "headerIndex headerIndex  "
+            "headerIndex headerIndex  "
+            "mainIndex mainIndex  "
+            "mainIndex mainIndex "
+
+    }
+
+    .imgLocal{
+        width: 90%;
+    }
+
+    .headerIndex{
+        text-align: center;
+    }
+
+    .headerIndex img{
+        margin: 15px;
+        border-radius: 15px;
+    }
+
+
+
+}
+
+/* Laptop */
+
+@media (max-width: 1024px) {
+
+    /* INDEX */
+
+    .inicioBody {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            "headerIndex headerIndex  "
+            "headerIndex headerIndex  "
+            "mainIndex mainIndex  "
+            "mainIndex mainIndex "
+
+    }
+
+    .imgLocal{
+        width: 90%;
+    }
+
+    .headerIndex{
+        text-align: center;
+    }
+
+    .headerIndex img{
+        margin: 15px;
+        border-radius: 15px;
+    }
+
+    /* NUESTROS SERVICIOS */
+
+    .ns {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas:
+
+            "tituloUno tituloUno tituloUno"
+            "imgUno imgUno imgUno"
+            "tituloDos tituloDos tituloDos"
+            "imgDos imgDos imgDos"
+            "tituloTres tituloTres tituloTres"
+            "imgTres imgTres imgTres"
+            "tituloCuatro tituloCuatro tituloCuatro"
+            "imgCuatro imgCuatro imgCuatro"
+            "tituloCinco tituloCinco tituloCinco"
+            "imgCinco imgCinco imgCinco"
+            "tituloSeis tituloSeis tituloSeis"
+            "imgSeis imgSeis imgSeis";
+    }
+
+    .ns div {
+        padding-bottom: 20px;
+    }
+
+
+    /* DEPI DEFINITIVA */
+
+    .imgDepi {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .headerDepi {
+        justify-content: center
+    }
+
+}
+
 /* Tablets */
 
 @media (max-width: 768px) {
@@ -519,29 +635,27 @@
     /* INDEX */
 
     .inicioBody {
-        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            "headerIndex headerIndex  "
+            "headerIndex headerIndex  "
+            "mainIndex mainIndex  "
+            "mainIndex mainIndex "
 
     }
 
-    .inicioBody {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .headerIndex {
-        padding-bottom: 0px;
-    }
-
-    .headerIndex img {
+    .headerIndex img{
         width: 90%;
     }
 
-    .iText {
-        max-width: 700px;
+    .headerIndex{
+        text-align: center;
     }
 
-    .mainIndex {
-        padding-top: 0px;
+    .headerIndex img{
+        margin: 15px;
+        border-radius: 15px;
     }
 
 
@@ -660,9 +774,17 @@
     }
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            "headerIndex headerIndex  "
+            "headerIndex headerIndex  "
+            "mainIndex mainIndex  "
+            "mainIndex mainIndex "
+
     }
+
+   
 
     /* NUESTROS SERVICIOS */
 
