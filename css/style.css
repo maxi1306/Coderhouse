@@ -68,6 +68,8 @@
 
 .inicioBody {
     display: grid;
+    background-image: url(../img/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg);
+    background-size: cover;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -80,25 +82,14 @@
 
 }
 
+.inicioBody img {
+
+    height: 535px;
+    border: solid 3px white;
+}
+
 .headerIndex {
     grid-area: headerIndex;
-}
-
-.mainIndex {
-    grid-area: mainIndex;
-}
-
-.inicioBody {
-    background-image: url(../img/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg);
-    background-size: cover;
-}
-
-.imgLocal {
-    width: 80%;
-
-}
-
-.headerIndex {
     padding-top: 30px;
     text-align: center;
 }
@@ -110,14 +101,14 @@
 }
 
 .mainIndex {
+    grid-area: mainIndex;
     padding-top: 40px;
     padding-bottom: 30px;
 }
 
-.inicioBody img {
+.imgLocal {
+    width: 80%;
 
-    height: 535px;
-    border: solid 3px white;
 }
 
 .indexText {
