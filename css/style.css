@@ -9,54 +9,33 @@
 .logo {
     width: 100px;
     margin: 10px;
-    transform: translate(100px);
 }
-
-.nav img {
-    transition: all 0, 3s;
+.logo:hover{
+    transform: scale(1.2);
 }
-
-
-.nav {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.navbar-nav{
+    font-family: cursive;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end
+}
+.navbar{
     background-image: linear-gradient(to top, #f5abdf, white, #f5abdf);
-    height: 100%;
 }
 
-.nav ul {
-    margin: 10px;
-}
-
-.nav li {
-    list-style: none;
-    padding: 10px;
-    font-family: 'Zen Loop', cursive;
-}
-
-.nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav li:hover {
+.navbar li:hover {
     background-image: linear-gradient(to top, #a318c565, #ffffff9c, #bf4fdb6b);
     border-radius: 25px;
     border: solid .5px #4f006e6b;
 }
 
-.nav a {
+.navbar a {
     color: #700270;
     text-decoration: none;
-
 }
 
-.nav a:hover {
-    color: #beb6b6;
+.navbar a:hover {
+    color: #c800ff;
 }
 
 /* -=-=-=-=-FOOTER-=-=-=-=-=-=- */
@@ -404,11 +383,10 @@
 .contacto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 1.7fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "nav nav nav nav"
         "header header header header"
         "header header header header"
         "header header header header"
@@ -553,6 +531,7 @@
 
 @media (max-width: 1024px) {
 
+
     /* INDEX */
 
     .inicioBody {
@@ -621,13 +600,10 @@
 
 @media (max-width: 768px) {
 
-    .nav {
-        justify-content: center
+    .navbar-nav{
+        align-items: center
     }
 
-    .logo {
-        transform: translate(0px)
-    }
 
     /* INDEX */
 
@@ -697,9 +673,10 @@
 
 @media (max-width:425px) {
 
-    .nav ul {
-        justify-content: center
+    .navbar-nav{
+        align-items: center
     }
+
 
     /* INDEX */
 
@@ -760,9 +737,10 @@
 
 @media (max-width:375px) {
 
-    .nav ul {
-        justify-content: center
+    .navbar-nav{
+        align-items: center
     }
+
 
     /* INDEX */
 
@@ -924,3 +902,4 @@
     }
 
 }
+
