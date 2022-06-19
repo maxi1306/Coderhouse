@@ -70,65 +70,67 @@
     display: grid;
     background-image: url(../img/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg);
     background-size: cover;
+    grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
     grid-template-areas:
-        "headerIndex headerIndex headerIndex headerIndex "
-        "headerIndex headerIndex headerIndex headerIndex "
-        "mainIndex mainIndex mainIndex mainIndex "
-        "mainIndex mainIndex mainIndex mainIndex "
-
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion terceraSeccion";
 }
 
-.inicioBody img {
-
-    height: 535px;
-    border: solid 3px white;
-}
-
-.headerIndex {
-    grid-area: headerIndex;
-    padding-top: 30px;
+.primeraSeccion {
+    grid-area: primeraSeccion;
     text-align: center;
+    padding-top: 30px;
+
+
 }
 
-.headerIndex img {
-    margin: 20px;
+.primeraSeccion img {
+    height: 700px;
+    border: solid 3px white;
     border-radius: 15px;
-
 }
 
-.mainIndex {
-    grid-area: mainIndex;
-    padding-top: 40px;
+.segundaSeccion {
+    grid-area: segundaSeccion;
+    text-align: center;
     padding-bottom: 30px;
-}
 
-.imgLocal {
-    width: 80%;
 
 }
 
-.indexText {
+.segundaSeccion img {
+    height: 600px;
+    border: solid 3px white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.terceraSeccion {
+    grid-area: terceraSeccion;
+    padding-bottom: 30px;
     text-align: center;
     font-size: 30px;
     font-family: 'Zen Loop', cursive;
 
+
+
 }
 
-.mainIndex div {
+.terceraSeccion div {
     display: inline-block;
     background-color: #ffffff56;
     max-width: 80%;
     text-align: center;
     padding: 5px 30px 30px 30px;
     border: solid 3px rgb(255, 255, 255);
-
+    border-radius: 20px;
 }
 
-.mainIndex h1 {
+.terceraSeccion h1 {
     padding-bottom: 15px;
 }
 
@@ -496,30 +498,31 @@
     /* INDEX */
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "headerIndex headerIndex  "
-            "headerIndex headerIndex  "
-            "mainIndex mainIndex  "
-            "mainIndex mainIndex "
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion terceraSeccion";}
 
-    }
 
     .imgLocal {
         width: 90%;
     }
 
-    .headerIndex {
+    .primeraSeccion {
         text-align: center;
     }
 
-    .headerIndex img {
+    .primeraSeccion img {
         margin: 15px;
         border-radius: 15px;
     }
 
-
+    .segundaSeccion{
+        text-align: center;
+    }
 
 }
 
@@ -535,28 +538,15 @@
     /* INDEX */
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr ;
         grid-template-areas:
-            "headerIndex headerIndex  "
-            "headerIndex headerIndex  "
-            "mainIndex mainIndex  "
-            "mainIndex mainIndex "
-
+        "primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion ";
     }
 
-    .imgLocal {
-        width: 90%;
-    }
 
-    .headerIndex {
-        text-align: center;
-    }
-
-    .headerIndex img {
-        margin: 15px;
-        border-radius: 15px;
-    }
 
     /* NUESTROS SERVICIOS */
 
@@ -608,30 +598,19 @@
     /* INDEX */
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr ;
         grid-template-areas:
-            "headerIndex headerIndex  "
-            "headerIndex headerIndex  "
-            "mainIndex mainIndex  "
-            "mainIndex mainIndex "
-
-    }
-
-    .headerIndex img {
-        width: 90%;
-    }
-
-    .headerIndex {
-        text-align: center;
-    }
-
-    .headerIndex img {
-        margin: 15px;
-        border-radius: 15px;
+        "primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion ";
     }
 
 
+    .iText{
+        font-size: 30px;
+    }
+    
     /* NUESTROS SERVICIOS */
 
     .ns {
@@ -681,10 +660,22 @@
     /* INDEX */
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion ";
     }
 
+    .segundaSeccion img{
+        width: 90%;
+
+    }
+
+    .iText{
+        font-size: 20px;
+    }
     /* NUESTROS SERVICIOS */
 
     .ns {
@@ -744,21 +735,23 @@
 
     /* INDEX */
 
-    .indexText {
+    .inicioBody {
+        grid-template-columns: 1fr 1fr  ;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion ";
+    }
+
+    .segundaSeccion img{
+        width: 90%;
+
+    }
+
+    .iText{
         font-size: 20px;
     }
-
-    .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "headerIndex headerIndex  "
-            "headerIndex headerIndex  "
-            "mainIndex mainIndex  "
-            "mainIndex mainIndex "
-
-    }
-
 
 
     /* NUESTROS SERVICIOS */
@@ -873,8 +866,21 @@
     /* INDEX */
 
     .inicioBody {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion ";
+    }
+
+    .segundaSeccion img{
+        width: 90%;
+
+    }
+
+    .iText{
+        font-size: 20px;
     }
 
     /* NUESTROS SERVICIOS */
